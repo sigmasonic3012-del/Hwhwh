@@ -5,7 +5,7 @@ exports.handler = async function(event, context) {
   const captcha = body["g-recaptcha-response"];
 
   // Напишите код здесь: вставьте ваш Secret Key
-  const secretKey = "6LdUyhQsAAAAAAcb50tYPkZIw4XEX4PCfDYp4j6O";
+  const secretKey = "6Le3lRUsAAAAADaelfMhsIlJE_Gw-RigmKNs0TLG";
 
   const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captcha}`;
   const response = await fetch(verificationUrl, { method: "POST" });
